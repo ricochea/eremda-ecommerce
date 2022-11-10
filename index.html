@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>EcommerceApp - Carrito</title>
+</head>
+<body>
+    <main>
+        <nav id="navApp" class="main__navApp">
+            <h1>Comercial EREMDA</h1>
+            <button class="btn" id="btnCarrito">Carrito (<span id="contCarrito">0</span>)</button>
+        </nav>
+        <h2 class="tituloPantalla">COMERCIAL EREMDA - TODO LO QUE NECESITAS</h1>
+        <section id="pantProducto" class="main__pantProducto mostrar">
+            <div id="contProducto" class="contProducto"></div>
+            <div class="paginacion">
+                <button id="btnAnterior" class="nobtn">Anterior</button>
+                <button id="btnSiguiente" class="btn">Siguiente</button>
+            </div>
+        </section>
+        <section id="pantCarrito" class="main__pantCarrito nomostrar">
+            <h2 class="tituloCarrito">Carrito de Compras</h1>
+            <br>
+            <button class="btn" id="btnMenu">Volver al Menu de Productos</button>
+            <table id="tabla_carrito" class="tabla_carrito">
+                <thead id="head_carrito" class="head_carrito">
+                    <tr>
+                        <th>#</th>
+                        <th>Detalle</th>
+                        <th>Producto</th>
+                        <th>Precio Unitario</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Opción</th>
+                    </tr>
+                </thead>
+                <tbody id="body_carrito" class="body_carrito"></tbody>
+                <tfoot>
+                    <tr id="footer_carrito" class="footer_carrito">
+                        <th colspan="7">Carrito Vacío - Agregue algún producto</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
